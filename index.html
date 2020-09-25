@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="icon" type="logo" href="/images/vscodenavlogo.png">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Visual Studio Code</title>
+</head>
+<body>
+    <header class="fixed-top">
+        <nav style="background-color: #2c2c32;" class="navbar navbar-expand-md">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#">
+                    <img style="width: 27px; margin-top: -5px;" src="images/vscodenavlogo.png"> Visual Studio Code
+                </a>
+                <button class="navbar-toggler" type="button"    data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon text-light"><i class="fa fa-bars" aria-hidden="true"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link  text-light"  href="#">Docs<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                        <a class="nav-link  text-light" href="#">Updates</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link  text-light" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link  text-light" href="#" tabindex="-1" aria-disabled="true">API</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light" href="#" tabindex="-1" aria-disabled="true">Extensions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-light" href="#" tabindex="-1" aria-disabled="true">FAQ</a>
+                        </li>
+                    </ul>
+                    <div class="ml-auto form-inline">
+                        <div class="input-group ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text bg-dark"><i class="fa fa-search text-light" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                                <input class="form-control bg-dark" type="text" placeholder="Search Docs"> 
+                        </div>
+                        <button class="ml-2 btn btn-primary">
+                            <span><i class="fa fa-arrow-down" aria-hidden="true"></i>
+                            </span>Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section style="background-color: #25252B; margin-top: 56px;" class="text-center pt-2">
+        <div class="container">
+            <label class="text-light"><a href="#">Version 1.49</a>  is now available! Read about the new features and fixes from August.</label>
+        </div>
+    </section>
+    <section class="pb-5" style="background-color: #2c2c32;">
+        <div class="container">
+           <div class="row justify-content-around">
+               <div class="col-sm-12 col-md-4 mt-5 text-center text-light">
+                    <p class="display-4">Code editing.</p>
+                    <p style="margin-top: -20px;" class="display-4"><strong>Redefined.</strong></p>
+                    <p class="text-muted">Free. Built on open source. Runs everywhere.</p>
+                    <div class="row justify-content-center">
+                        <button class="btn rounded-0 btn-primary mr-1">
+                            <p style="margin: 5px; margin-top: -3px;" class="px-4"><strong>Download for Windows</strong></p>
+                            <p style="margin: 7px;" class="px-4">Stable build</p>
+                        </button>
+                        <div class="btn-group">
+                            <button type="button" class="btn rounded-0 btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </button>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="background-color: #25252B;" class="py-2 rounded mt-3">Other platforms and Insiders Edition</p>
+                    <div>
+                        <small>By using VS Code, you agree to its</small>
+                    </div>
+                    <div>
+                        <small><a href="#">license</a> and <a href="
+                            #">privacy statement.</a></small>
+                    </div>
+               </div>
+               <div class="col-sm-12 col-md-7 mt-5">
+                    <img style="margin: 0 auto; width: 90%;" src="images/titleVSCodeScreenshot.png">
+               </div>
+           </div> 
+        </div>
+    </section>
+    <section class="container">
+            <div class="row">
+                <div class="col-6 col-md-3 feature">
+                    <div class="text-center py-3">
+                        <i style="font-size: 60px;" class="fa fa-lightbulb-o feature-1" aria-hidden="true"></i>
+                        <p style="font-size: 20px;" class="pt-2">IntelliSense</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3 feature">
+                    <div class="text-center py-3">
+                        <i style="font-size: 60px; font-weight: 100;" class="fa fa-bug feature-2" aria-hidden="true"></i>
+                        <p style="font-size: 20px;" class="pt-2">Run and Debug
+                    </div>
+                </div><div class="col-6 col-md-3 feature">
+                    <div class="text-center py-3">
+                        <i style="font-size: 60px;" class="fa fa-code-fork feature-3" aria-hidden="true"></i>
+                        <p style="font-size: 20px;" class="pt-2">Built-in-Git</p>
+                    </div>
+                </div><div class="col-6 col-md-3 feature">
+                    <div class="text-center py-3">
+                        <i style="font-size: 60px;" class="fa fa-th-large feature-4" aria-hidden="true"></i>
+                        <p style="font-size: 20px;" class="pt-2">Extensions</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section style="background-color: #f5f5f5;" class="">
+        <div class="container">
+            <div class="col">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row col-12 justify-content-around">
+                                <div class="row col-sm-12 col-lg-4 my-5">
+                                        <div class="float-left pr-2" style="width: 20%;">
+                                            <img style="width: 100%;" class="rounded-circle" src="images/SocialProofs/Una.jpg">
+                                        </div>
+                                        <div style="width: 80%;">
+                                            <span><strong>Una Kravets</strong></span>
+                                            <small class="text-muted">@Una</small>
+                                            <span><i class="fa fa-twitter float-right text-muted" aria-hidden="true"></i>
+                                            </span>
+                                            <p style="" class="lead">VS <a href="#">@code</a> does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
+                                        </div>
+                                </div>
+                                <div class="row col-sm-12 col-lg-4 my-5">
+                                    <div class="float-left pr-2" style="width: 20%;">
+                                        <img style="width: 100%;" class="rounded-circle" src="images/SocialProofs/jadbox.jpg">
+                                    </div>
+                                    <div style="width: 80%;">
+                                        <span><strong>Jonathan Dunlap</strong></span>
+                                        <small class="text-muted">@jadbox</small>
+                                        <span><i class="fa fa-twitter float-right text-muted" aria-hidden="true"></i>
+                                        </span>
+                                        <p style="" class="lead">Awesome - VS Code will have deep remote development: you can connect to a container running a different OS and be able to use any VS Codeplugins/linting/debugging for that environment. 🔥🔥🔥</p>
+                                    </div>
+                                </div>
+                                <div class="row col-sm-12 col-lg-4 my-5">
+                                    <div class="float-left pr-2" style="width: 20%;">
+                                        <img style="width: 100%;" class="rounded-circle" src="images/SocialProofs/PKodmad.jpg">
+                                    </div>
+                                    <div style="width: 80%;">
+                                        <span><strong>Pavithra Kodmad</strong></span>
+                                        <small class="text-muted">@PKodmad</small>
+                                        <span><i class="fa fa-twitter float-right text-muted" aria-hidden="true"></i>
+                                        </span>
+                                        <p style="" class="lead">VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row col-12 justify-content-around">
+                                <div class="row col-sm-12 col-lg-4 my-5">
+                                        <div class="float-left pr-2" style="width: 20%;">
+                                            <img style="width: 100%;" class="rounded-circle" src="images/SocialProofs/MrDarrenV.jpg">
+                                        </div>
+                                        <div style="width: 80%;">
+                                            <span><strong>Darren</strong></span>
+                                            <small class="text-muted">@MrDarrenV</small>
+                                            <span><i class="fa fa-twitter float-right text-muted" aria-hidden="true"></i>
+                                            </span>
+                                            <p style="" class="lead">Just as I thought <a href="#">@code</a> couldn't get better, out comes its Remote Development plugins in the Stable version that let you remote into containers as a dev environment! 😍</p>
+                                        </div>
+                                </div>
+                                <div class="row col-sm-12 col-lg-4 my-5">
+                                    <div class="float-left pr-2" style="width: 20%;">
+                                        <img style="width: 100%;" class="rounded-circle" src="images/SocialProofs/cassidoo.jpg">
+                                    </div>
+                                    <div style="width: 80%;">
+                                        <span><strong>Cassidy Williams</strong></span>
+                                        <small class="text-muted">cassidoo</small>
+                                        <span><i class="fa fa-twitter float-right text-muted" aria-hidden="true"></i>
+                                        </span>
+                                        <p style="" class="lead">I was a vim fan, but then discovered VS Code's Vim plugin, which lets me add in my vim keybindings. I can maintain my coding style without having to compromise on speed.</p>
+                                    </div>
+                                </div>
+                                <div class="row col-sm-12 col-lg-4 my-5">
+                                    <div class="float-left pr-2" style="width: 20%;">
+                                        <img style="width: 100%;" class="rounded-circle" src="images/SocialProofs/lauragift21.jpg">
+                                    </div>
+                                    <div style="width: 80%;">
+                                        <span><strong>Gift Egwuenu</strong></span>
+                                        <small class="text-muted">@lauragift21</small>
+                                        <span><i class="fa fa-twitter float-right text-muted" aria-hidden="true"></i>
+                                        </span>
+                                        <p style="" class="lead">I love <a href="#">@code</a> The built-in markdown previewer is awesome and the plugin system allows me to use GitLens, which makes my workflow so much easier.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev"       href="#carouselExampleControls" role="button"     data-slide="prev">
+                        <i style="margin-right: 220px;" class="fa fa-chevron-left text-muted" aria-hidden="true"></i>
+
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <i style="margin-left: 220px;" class="fa fa-chevron-right text-muted" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </div>
+        </div>
+    </section>
+    <section class="my-4">
+            <div class="container">
+                <div class="row col-12 justify-content-around py-5">
+                    <div class=" col-sm-8 col-md-4">
+                        <img style="width: 100%;" src="images/home-intellisense.svg">
+                    </div>
+                    <div class="col-sm-12 col-md-8 py-3 px-5">
+                        <h3 class="">Meet IntelliSense</h3>
+                        <p>Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row col-12 justify-content-around">
+                <div class="col-sm-12 col-md-8 py-5 my-5">
+                    <h3>Print statement debugging is a thing of the past.</h3>
+                    <p>Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+                </div>
+                <div class="col-sm-12 col-md-4 py-4 my-4">
+                    <img style="width: 100%;" src="images/home-debug.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-4">
+        <div class="container">
+            <div class="row col-12 justify-content-around py-5">
+                <div class=" col-sm-8 col-md-4">
+                    <img style="width: 100%;" src="images/home-git.svg">
+                </div>
+                <div class="col-sm-12 col-md-8 py-3 px-5">
+                    <h3 class="">Git commands built-in.</h3>
+                    <p>Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row col-12 justify-content-around">
+                <div class="col-sm-12 col-md-8 py-5 my-5">
+                    <h3>Extensible and customizable.</h3>
+                    <p>Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <a href="#">Learn more about extensions.</a></p>
+                </div>
+                <div class="col-sm-12 col-md-4 py-4 my-4">
+                    <img class="ss" style="width: 100%;" src="images/LanguagesScreenShot.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-4">
+        <div class="container">
+            <div class="row col-12 justify-content-around py-5">
+                <div class=" col-sm-8 col-md-4">
+                    <img style="width: 100%;" src="images/img1.svg">
+                </div>
+                <div class="col-sm-12 col-md-8 py-3 px-5">
+                    <h3 class="">Deploy with confidence and ease</h3>
+                    <p>With <a href="#">Microsoft Azure</a> you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, <a href="#">all from within VS Code.</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row col-12 justify-content-center">
+                <div class="col-sm-12 col-md-4 pt-5 mt-5 text-center">
+                    <h3>VS CODE FOR</h3>
+                </div>
+                <div class="col-sm-12 col-md-4 pt-5 text-center">
+                    <h3>Java</h3>
+                    <h3>PHP</h3>
+                    <h3>CSS</h3>
+                    <h3>Java Script</h3>
+                    <h3>Coffee Script</h3>
+                    <h3>HTML</h3>
+                </div>
+            </div>
+            <div class="text-center py-5">
+                <button class="btn btn-primary btn-large rounded-0 px-5 py-3">Get Started Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="my-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col">
+                    <div class="justify-content-center mx-5 px-5">
+                        <img class="mx-5" width="50%" src="images/windows-logo.png">
+                    </div>
+                    <div class="text-center py-4">
+                        <button class="btn btn-primary rounded-0 px-5">
+                            <span><i class="fa fa-download" aria-hidden="true"></i>
+                            </span>  Windows
+                            <div>
+                                <small>Windows 7, 8, 10</small>
+                            </div>
+                        </button>
+                    </div>
+                        <div class="text-center">
+                            <small class="px-2">User Installer </small>
+                            <small><a href="#">64 Bit</a></small>
+                            <small><a href="#">32 Bit</a></small>
+                            <small><a href="#">ARM</a></small>
+                        </div>
+                        <div class="text-center">
+                            <small class="px- text-center">System Installer</small>
+                            <small><a href="#">64 Bit</a></small>
+                            <small><a href="#">32 Bit</a></small>
+                            <small><a href="#">ARM</a></small>
+                        </div>
+                        <div class="text-center">
+                            <small class="px-4 text-center">. zip</small>
+                            <small class="pl-3"><a href="#">64 Bit</a></small>
+                            <small><a href="#">32 Bit</a></small>
+                            <small><a href="#">ARM</a></small>
+                        </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col ">
+                    <div class="justify-content-center mx-5 px-5">
+                        <img class="mx-5" width="42%" src="images/linux-logo.png">
+                    </div>
+                    <div class="row text-center py-4 mx-5 px-4">
+                        <div class="">
+                            <button class="btn btn-primary rounded-0 px-5">
+                                <span><i class="fa fa-download" aria-hidden="true"></i>
+                                </span>  .Deb
+                                <div>
+                                    <small>debian, Ubuntu</small>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                        <div class="text-center">
+                            <small class="px-2">.deb </small>
+                            <small><a href="#">64 Bit</a></small>
+                        </div>
+                        <div class="text-center">
+                            <small class="px-2 text-center">.rpm</small>
+                            <small><a href="#">64 Bit</a></small>
+                        </div>
+                        <div class="text-center">
+                            <small class="px-2 text-center">.tar.gz</small>
+                            <small class=""><a href="#">64 Bit</a></small>
+                        </div>
+                        <div  class="text-center"><small><a href="#">Snap Store</a></small></div>
+                </div>
+                <div class="col-sm-12 col-md-4 col justify-content-center">
+                    <div class="justify-content-center mx-5 px-5">
+                        <img class="mx-5" width="42%" src="images/apple-logo.svg">
+                    </div>
+                    <div class="text-center py-4">
+                        <button class="btn btn-primary rounded-0 px-5">
+                            <span><i class="fa fa-download" aria-hidden="true"></i>
+                            </span>  Mac
+                            <div>
+                                <small>macOS 10.10+</small>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+    </section>
+    <section style="background-color: #f5f5f5;">
+        <div class="container text-center mt-5 py-5">
+            <h3>Want new features sooner?</h3>
+            <h5>Get the <a href="#">Insiders build</a> instead.</h5>
+            <h6 class="mt-5 pt-5 text-muted">LICENSE AND PRIVACY TERMS</h6>
+            <p class="mx-5 px-5 text-muted">By downloading and using Visual Studio Code, you agree to the license terms and privacy statement. VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see How to Disable Crash Reporting to learn how to disable it.</p>
+        </div>
+    </section>
+    <footer style="background-color: #333;" class="py-5">
+        <div class="row mx-5 text-light">
+            <div class="row mr-5 pr-5 col-md-6">
+                <small>Hello from Seattle.</small>
+                <small class="px-4">Follow @code</small>
+                <button class="btn btn-light mx-1 btn-sm">
+                    <span><i class="fa fa-github" aria-hidden="true"></i>
+                    </span>
+                    <span>Star</span>
+                </button>
+                <button class="btn btn-light">
+                    <span>103,653</span>
+                </button>
+            </div>
+            <div class="col-4">
+                <small class="px-2">Support</small>
+                <small class="px-2">Privacy</small>
+                <small class="px-2">Terms of Use</small>
+                <small class="px-2">License</small>
+            </div>
+            <div class="col" style="width: 5%;">
+                <img style="width: 50%; color: white;" src="images/microsoft-logo.png ">
+                <div><small>© 2020 Microsoft</small></div>
+            </div>
+        </div>
+    </footer>
+ 
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
